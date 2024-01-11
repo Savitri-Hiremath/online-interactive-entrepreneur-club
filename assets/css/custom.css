@@ -1,0 +1,73 @@
+
+::selection{
+    color: #fff;
+    background: #6665ee;
+}
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login .form{
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login .form form .form-control{
+    height: 40px;
+    font-size: 15px;
+}
+.login .form form .forget-pass{
+    margin: -15px 0 15px 0;
+}
+.login .form form .forget-pass a{
+   font-size: 15px;
+}
+.login .form form .button{
+    background: #6665ee;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.login .form form .button:hover{
+    background: #5757d1;
+}
+.login .form form .link{
+    padding: 5px 0;
+}
+.login .form form .link a{
+    color: #6665ee;
+}
+.login .login-form form p{
+    font-size: 14px;
+}
+.login .row .alert{
+    font-size: 14px;
+}
+
+.login{
+    width:100vw;
+    height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.nav-link .bi {
+    font-size: 24px; /* Adjust the value as per your preference */
+}
+/* Add this to your custom.css or style.css file */
+.password-toggle-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Adjust styling as needed */

@@ -1,0 +1,76 @@
+/* Hover animation for nav links */
+.nav-link:hover {
+    transform: translateY(-3px); /* Move the link up by 3px on hover */
+    transition: transform 0.3s ease; /* Smooth transition for the movement */
+}
+.bi-bell-fill
+
+/* Animation for the notification bell */
+.nav-link[data-bs-toggle="offcanvas"] .bi-bell-fill:after {
+    content: ''; /* Adding a pseudo-element for the animation */
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    animation: pulse 1.5s infinite; /* The pulse animation will make it fade in and out */
+    opacity: 0; /* Initially hidden */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.nav-link .bi {
+    font-size: 24px; /* Adjust the value as per your preference */
+}
+/* Style for the search input */
+#search {
+    background-color: #f5f5f5;   /* Light gray background */
+    border: 1px solid #ccc;      /* Light gray border */
+    border-radius: 20px;         /* Rounded corners */
+    padding: 10px 15px;          /* Padding inside the input */
+    font-size: 16px;             /* Adjust the font size as needed */
+    color: #333;                 /* Text color */
+}
+
+/* Style for the placeholder text */
+#search::placeholder {
+    color: #777;                 /* Light gray placeholder text color */
+    opacity: 0.8;                /* Optional: Adjust the opacity if needed */
+}
+
+/* Style for the search icon (assuming it's inside the search input) */
+#search::before {
+    content: "\1F50D";           /* Unicode for magnifying glass icon; adjust as needed */
+    font-family: "FontAwesome"; /* Assuming you're using Font Awesome or similar for icons */
+    position: absolute;
+    top: 50%;
+    left: 10px;                  /* Adjust the position as needed */
+    transform: translateY(-50%);
+    color: #666;                /* Adjust the icon color */
+    font-size: 18px;            /* Adjust the icon size */
+}
+
+/* Reduce space between funding and profile pic */
+.nav-link.funding-link {
+    margin-right: 10px; /* Adjust this value to your preference */
+}
+
+/* Adjust the margin of the dropdown link containing the profile pic */
+.dropdown.dropstart .nav-link {
+    margin-right: 5px; /* Adjust this value to your preference */
+}
